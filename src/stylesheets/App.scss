@@ -1,0 +1,76 @@
+@import './base/reset';
+@import './utils/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  a {
+    color: white;
+  }
+
+body {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    background: url('../images/horizonte.jpg');
+    background-size: cover;
+    background-position: bottom;
+
+    .App {
+        background-color: #80808063;
+        width: 100vw; 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        header{
+
+            .logo{
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                color: white;
+                font-size: 25px;
+            }
+
+            .video{
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                color: white;
+                font-size: 25px;
+                
+
+                i{
+                    color: white; 
+                    padding-left: 5px; 
+                }
+            }
+        }
+        
+
+        .title_Container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+
+            h1 {
+                font-weight: 400;
+            }           
+
+            p {
+                border: 2px solid white;
+                padding: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
