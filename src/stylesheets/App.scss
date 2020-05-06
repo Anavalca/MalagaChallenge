@@ -15,157 +15,180 @@ a {
 body {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    background: url('../images/horizonte.jpg');
-    background-size: cover;
-    background-position: bottom;
+
 
     .App {
-        background-color: #80808063;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        header {
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            background: url('../images/horizonte.jpg');
+            background-size: cover;
+            background-position: bottom;
 
-            color: white;
 
-            .logo {
-                position: absolute;
-                top: 20px;
-                left: 20px;
-                font-size: 12px;
-                cursor: pointer;
 
-                @include forTablet {
-                    font-size: 18px;
-                    top: 27px;
-                    left: 27px;
+            .backgroundFilter {
+                width: 100vw;
+                height: 100vh;
+                background-color: #80808063;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                header {
+
+                    color: white;
+
+                    .logo {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        font-size: 12px;
+                        cursor: pointer;
+
+                        @include forTablet {
+                            font-size: 18px;
+                            top: 27px;
+                            left: 27px;
+                        }
+
+                    }
+
+                    .menu {
+                        position: absolute;
+                        top: 20px;
+                        right: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        font-size: 12px;
+                        padding-right: 5px;
+                        border-right: 1px solid white;
+
+                        @include forTablet {
+                            top: 27px;
+                            right: 27px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 18px;
+                            border-right: none;
+
+                        }
+
+                        .video {
+                            cursor: pointer;
+                            padding-bottom: 9px;
+
+                            @include forTablet {
+                                padding-right: 20px;
+                                border-right: 1px solid white;
+                                padding-bottom: 0px;
+                            }
+
+                            i {
+                                color: white;
+                                padding-left: 5px;
+                                font-size: 12px;
+
+                                @include forTablet {
+                                    font-size: 15px;
+                                }
+                            }
+
+                        }
+
+                        .characters {
+                            cursor: pointer;
+
+                            @include forTablet {
+                                padding-left: 20px;
+                            }
+                        }
+
+                    }
                 }
 
-            }
 
-            .menu {
-                position: absolute;
-                top: 20px;
-                right: 15px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                font-size: 12px;
-                padding-right: 5px;
-                border-right: 1px solid white;
+                .title_Container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: white;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    padding-bottom: 40px;
 
-                @include forTablet {
-                    top: 27px;
-                    right: 27px;
+                    @include forTablet{
+                        padding-bottom: 0; 
+                    }
+
+                    h1 {
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding-bottom: 20px;
+
+                        @include forTablet {
+                            font-size: 40px;
+                        }
+                    }
+
+                    .button {
+                        font-size: 13px;
+                        border: 1px solid white;
+                        padding: 8px;
+                        font-weight: 300;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        @include forTablet {
+                            font-size: 20px;
+                            padding: 10px;
+                            font-weight: 400;
+                            border: 2px solid white;
+                        }
+                    }
+                }
+
+                .iconsRRSS {
+                    color: white;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    font-size: 18px;
-                    border-right: none;
+                    position: absolute;
+                    bottom: 10px;
 
-                }
-
-                .video {
-                    cursor: pointer;
-                    padding-bottom: 9px;
-
-                    @include forTablet {
-                        padding-right: 20px;
-                        border-right: 1px solid white;
-                        padding-bottom: 0px;
+                    @include forPc {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        left: 8px;
+                        height: 100%;
                     }
 
                     i {
-                        color: white;
-                        padding-left: 5px;
-                        font-size: 12px;
+                        font-size: 20px;
+                        padding: 12px;
+                        opacity: 0.8;
+                        cursor: pointer;
 
-                        @include forTablet {
-                            font-size: 15px;
+                        @include forPc {
+                            font-size: 25px;
+                            opacity: 0.7;
                         }
                     }
-
                 }
 
-                .characters {
-                    cursor: pointer;
-
-                    @include forTablet {
-                        padding-left: 20px;
-                    }
-                }
-
-            }
-        }
-
-
-        .title_Container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: white;
-            letter-spacing: 2px;
-            text-align: center;
-
-            h1 {
-                font-size: 16px;
-                font-weight: 400;
-                padding-bottom: 20px;
-
-                @include forTablet {
-                    font-size: 40px;
-                }
-            }
-
-            p {
-                font-size: 13px;
-                border: 1px solid white;
-                padding: 8px;
-                font-weight: 300;
-                cursor: pointer;
-
-                @include forTablet {
-                    font-size: 20px;
-                    padding: 10px;
-                    font-weight: 400;
-                    border: 2px solid white;
-                }
-            }
-        }
-
-        .iconsRRSS {
-            color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 10px;
-
-            @include forTablet {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                left: 8px;
-                height: 100%;
-            }
-
-            i {
-                font-size: 20px;
-                padding: 12px;
-                opacity: 0.8;
-                cursor: pointer;
-
-                @include forTablet {
-                    font-size: 25px;
-                    opacity: 0.7;
-                }
             }
         }
     }
