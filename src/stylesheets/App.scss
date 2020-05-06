@@ -34,7 +34,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
 
-                @include forPc{
+                @include forPc {
                     flex-direction: row;
                     justify-content: center;
                 }
@@ -124,8 +124,8 @@ body {
                     text-align: center;
                     padding-bottom: 40px;
 
-                    @include forTablet{
-                        padding-bottom: 0; 
+                    @include forTablet {
+                        padding-bottom: 0;
                     }
 
                     h1 {
@@ -195,55 +195,71 @@ body {
             }
         }
 
-        .wrapperTest{
+        .wrapperTest {
             width: 100vw;
             height: 100vh;
 
-            .text{
-                color: grey;
-                font-size: 18px;
-                font-weight: 500;
-                background-color: white;
-                padding: 5px;
-
-                @include forPc{
-                    font-size: 60px;
-                    background: none;
-                    color: white;
-                    text-shadow: 3px 3px 9px #020202;
-                }
-            }
-
-            .container_A{
+            .container_A {
                 height: 50%;
                 background: url('../images/c_king.jpg');
                 background-size: cover;
                 background-position: bottom;
-                opacity: 0.8;
+                opacity: 0.6;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
-                &:hover{
+
+                &:hover {
                     opacity: 1;
                 }
-               
             }
 
-            .container_B{
+
+
+            .container_B {
                 height: 50%;
                 background: url('../images/beach.jpg');
                 background-size: cover;
                 background-position: center;
-                opacity: 0.8;
+                opacity: 0.6;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                &:hover{
+                &:hover {
                     opacity: 1;
                 }
             }
+
+            .text {
+                color: grey;
+                font-size: 18px;
+                font-weight: 600;
+                background-color: white; 
+
+                @include forPc {
+                    font-size: 26px;
+                    padding: 2px;
+                }
+            }
+
+            .A {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+
+            .B {
+                position: absolute;
+                bottom: 23%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+
         }
+
     }
 }
