@@ -28,27 +28,42 @@ body {
         align-items: center;
 
         header{
+            font-size: 18px;
+            color: white;
 
             .logo{
                 position: absolute;
-                top: 30px;
-                left: 30px;
-                color: white;
-                font-size: 25px;
+                top: 27px;
+                left: 27px;   
+                
             }
 
-            .video{
+            .menu{
                 position: absolute;
-                top: 30px;
-                right: 30px;
-                color: white;
-                font-size: 25px;
+                top: 27px;
+                right: 27px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 
 
-                i{
-                    color: white; 
-                    padding-left: 5px; 
+                .video {
+                    padding-right: 20px;
+                    border-right: 1px solid white;
+
+                    i {
+                        color: white; 
+                        padding-left: 5px; 
+                        font-size: 15px;
+                    }
+
                 }
+
+                .character {
+                    padding-left: 20px;
+
+                }
+
             }
         }
         
@@ -58,15 +73,15 @@ body {
             flex-direction: column;
             align-items: center;
             color: white;
-            margin-bottom: 30px;
             letter-spacing: 2px;
 
             h1 {
                 font-weight: 400;
+                padding-bottom: 20px;
             }           
 
             p {
-                border: 2px solid white;
+                border: 1px solid white;
                 padding: 10px;
                 font-weight: 400;
             }
