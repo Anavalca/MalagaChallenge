@@ -164,7 +164,7 @@ body {
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    bottom: 10px;
+                    bottom: 3px;
 
                     @include forPc {
                         display: flex;
@@ -174,11 +174,12 @@ body {
                         position: absolute;
                         left: 8px;
                         height: 100%;
+                        bottom: 10px;
                     }
 
                     i {
                         font-size: 20px;
-                        padding: 12px;
+                        padding: 0 12px 0 12px;
                         opacity: 0.8;
                         cursor: pointer;
 
