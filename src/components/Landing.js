@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Landing = () => {
     return (
-        <div className='wrapper'>
+        <div className='wrapperLanding'>
             <div className='backgroundFilter'>
                 <header>
                     <p title='Comparte Alegría' className="logo">#ComparteAlegría</p>

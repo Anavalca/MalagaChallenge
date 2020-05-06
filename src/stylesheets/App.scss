@@ -16,17 +16,14 @@ body {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
 
-
     .App {
 
-        .wrapper {
+        .wrapperLanding {
             width: 100vw;
             height: 100vh;
             background: url('../images/horizonte.jpg');
             background-size: cover;
             background-position: bottom;
-
-
 
             .backgroundFilter {
                 width: 100vw;
@@ -195,6 +192,57 @@ body {
                     }
                 }
 
+            }
+        }
+
+        .wrapperTest{
+            width: 100vw;
+            height: 100vh;
+
+            .text{
+                color: grey;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: white;
+                padding: 5px;
+
+                @include forPc{
+                    font-size: 60px;
+                    background: none;
+                    color: white;
+                    text-shadow: 3px 3px 9px #020202;
+                }
+            }
+
+            .container_A{
+                height: 50%;
+                background: url('../images/c_king.jpg');
+                background-size: cover;
+                background-position: bottom;
+                opacity: 0.8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                &:hover{
+                    opacity: 1;
+                }
+               
+            }
+
+            .container_B{
+                height: 50%;
+                background: url('../images/beach.jpg');
+                background-size: cover;
+                background-position: center;
+                opacity: 0.8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
     }
