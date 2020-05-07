@@ -203,11 +203,6 @@ body {
         .wrapperTest {
             width: 100vw;
             height: 100vh;
-            @supports (-webkit-appearance:none) {
-                .os-android & {
-                    height: calc(100vh - 56px);
-                }
-            }
 
             .container_A {
                 cursor: pointer;
@@ -278,18 +273,20 @@ body {
                 border-radius: 5rem;
                 background-color: white;
                 position: absolute;
-                top: 50%;
+                top: calc(50% - 56px);
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
 
-                @include forPc {
+                @include forTablet {
                     height: 60px;
+                    top: 50%;
                 }
-
+              
 
                 .question {
                     color: grey;
