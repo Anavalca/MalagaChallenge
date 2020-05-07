@@ -203,6 +203,11 @@ body {
         .wrapperTest {
             width: 100vw;
             height: 100vh;
+            @supports (-webkit-appearance:none) {
+                .os-android & {
+                    height: calc(100vh - 56px);
+                }
+            }
 
             .container_A {
                 cursor: pointer;
