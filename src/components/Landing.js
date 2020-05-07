@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Character from './Character';
 
 const Landing = () => {
     return (
@@ -9,7 +10,9 @@ const Landing = () => {
                     <p title='Comparte Alegría' className="logo">#ComparteAlegría</p>
                     <nav className='menu'>
                         <p className="video">Ver vídeo<i class="far fa-play-circle"></i></p>
+                        <Link to='/'>
                         <p className="characters">Buscadores de alegría</p>
+                        </Link>
                     </nav>
                 </header>
                 <div className="title_Container">

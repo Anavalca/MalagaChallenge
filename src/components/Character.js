@@ -7,12 +7,12 @@ import fiestera from '../images/party.jpg';
 
 const Character = () => {
   return (
-    <div >
-        <img src={aventurera}></img>
-        <img src={cultureta}></img>
-        <img src={naturista}></img>
-        <img src={gourmet}></img>
-        <img src={fiestera}></img>      
+    <div className='characterWrapper' >
+        <img alt='personaje'src={aventurera}></img>
+        <img alt='personaje'src={cultureta}></img>
+        <img alt='personaje'src={naturista}></img>
+        <img alt='personaje'src={gourmet}></img>
+        <img alt='personaje'src={fiestera}></img>      
     </div>
   )
 }
