@@ -8,11 +8,11 @@ const TestPage = () => {
       </div>
       <div className='container_B'>
       </div>
-      <p className='text A'>Aventuras sin límites en las alturas</p>
-      <p className='text B'>Un historia única con la brisa del mar</p>
       <div className='questionContainer'>
         <p className="question"><b>Paula</b> descubre su alegría con . . .</p>
       </div>
+      <p className='text A'>Aventuras sin límites en las alturas</p>
+      <p className='text B'>Un historia única con la brisa del mar</p>
       <Link to="/">
         <i title='Ir a la home' class="fas fa-home home"></i>
       </Link>
