@@ -261,10 +261,14 @@ body {
 
             .B {
                 position: absolute;
-                top: 75%;
+                top: calc(75% + 26px);
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%)
+            }
+
+            @include forTablet{
+                top: 75%;
             }
 
             .questionContainer {
