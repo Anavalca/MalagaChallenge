@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TestPage = () => {
   return (
@@ -9,6 +10,12 @@ const TestPage = () => {
       </div>
       <p className='text A'>Aventuras sin límites en las alturas</p>
       <p className='text B'>Un historia única con la brisa del mar</p>
+      <div className='questionContainer'>
+        <p className="question"><b>Paula</b> descubre su alegría con . . .</p>
+      </div>
+      <Link to="/">
+        <i title='Ir a la home' class="fas fa-home home"></i>
+      </Link>
     </div>
   )
 }
