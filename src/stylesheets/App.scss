@@ -12,6 +12,10 @@ a {
     color: white;
 }
 
+.hidden{
+    display: none;
+}
+
 body {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
@@ -31,7 +35,6 @@ body {
             }
 
             .backgroundFilter {
-                // width: 100vw;
                 height: 100vh;
                 background-color: #80808063;
                 display: flex;
@@ -42,6 +45,43 @@ body {
                 @include forPc {
                     flex-direction: row;
                     justify-content: center;
+                }
+
+                .video_PopUp {
+                    position: absolute;
+                    top:160px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    div {
+                        width: 324px !important;
+                        height: 180px !important;
+                        
+                        @include forTablet{
+                            width: 640px !important;
+                            height: 360px !important;
+                        }
+                    }
+
+                    @include forTablet{
+                        position: absolute;
+                        top:160px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    i{
+                        cursor: pointer;
+                        color: white;
+                        padding-bottom: 5px;
+
+                        @include forTablet{
+                            font-size: 19px;
+
+                        }
+                    }
                 }
 
                 header {
